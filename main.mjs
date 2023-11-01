@@ -4,6 +4,8 @@ import * as bit from "./excersises/3-bitCount.js";
 import * as twoS from "./excersises/4-TwoSum.js";
 import * as duEn from "./excersises/5-DuplicateEncoder.js";
 import * as ppl from "./excersises/6-BusDrop.js";
+import * as rgb from "./excersises/7-RGB-Converter.js";
+import * as primeG from "./excersises/8-PrimeGap.js";
 
 /* 1 - moveZeros || ([false,1,0,1,2,0,1,3,"a"]) == [false,1,1,2,1,3,"a",0,0] 
   let arr = [false, 1, 0, 1, 2, 0, 1, 3, "a"]; 
@@ -34,7 +36,19 @@ import * as ppl from "./excersises/6-BusDrop.js";
 
 /* 6- Bus Drop
   [[10,0],[3,5],[5,8]] => 5 [[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]] => 17 [[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]] => 21 
-  let people = [[10,0],[3,5],[5,8]];
-  console.log(ppl.busDropIn(people));
+  console.log(ppl.busDropIn([[10,0],[3,5],[5,8]]));
 */
 
+/* 31/10/23 */
+
+/* 7- RGB Converter 148, 0, 211   --> "9400D3" console.log(rgb.getHexCode(148, 0, 211)); */
+
+/* 8 - Gap in primes 
+  gap(2,100,110), [101, 103])
+    gap(4,100,110), [103, 107])
+    gap(6,100,110), null)
+    gap(8,300,400), [359, 367])
+    gap(10,300,400), [337, 347])
+*/
+
+console.log(primeG.getGap([4,100,110]));
